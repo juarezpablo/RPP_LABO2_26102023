@@ -33,6 +33,7 @@ namespace Entidades
         public static Fabrica operator -(Fabrica fabrica, Vehiculo vehiculo)
         {
             fabrica.vehiculos.Remove(vehiculo);
+            fabrica.vehiculos.Clear();
             return fabrica;
         }
     }
